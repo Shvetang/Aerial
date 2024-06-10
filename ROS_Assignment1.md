@@ -8,7 +8,8 @@ To setup catkin, ran
 > cd ~/catkin_ws/src &&\   
 > catkin_init_workspace &&\   
 > cd ~/catkin_ws &&\   
-> catkin build       
+> catkin build
+     
 Then sourced using source ~/catkin_ws/devel/setup.bash  
   
 ## Question 1  
@@ -40,7 +41,8 @@ Ran `rosmsg show geometry_msgs/Twist`
 > geometry_msgs/Vector3 angular   
     float64 x   
     float64 y   
-    float64 z   
+    float64 z
+
 Used command `rostopic pub ` to command a desired velocity 
 `rostopic pub /cmd_vel geometry_msgs/Twist "{linear: {x: 5.0, y: 3.0, z: 4.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}" -r 20`    
 
